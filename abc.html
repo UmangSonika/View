@@ -262,7 +262,6 @@
                                     onclick="SD_Click(event, 'SD_RibbonChange')">Charts</a></li>
                             <li><a ribbon="r-options" onclick="SD_Click(event, 'SD_RibbonChange')">Options</a></li>
                             <!-- <li><a id="r-developerTab" ribbon="r-developer" onclick="SD_Click(event, 'SD_RibbonChange')">Developer</a></li> -->
-                            <li><a ribbon="r-help" onclick="SD_Click(event, 'SD_RibbonChange')">Support</a></li>
                         </ul>
 
                         <ul id="mainNavRight" class="nav">
@@ -334,33 +333,6 @@
                     </button>
                     <div contenturl="/views/CompositeRibbonTemplate.html" contentloadstate="true">
                         <div>
-                            <div contenturl="views/Ribbons/Help.html" contentloadstate="true">
-                                <div id="r-help" class="frame btn-toolbar tab-pane sdRibbon">
-                                    <div class="slidee">
-                                        <div class="s-group btn-group">
-                                            <div class="btn-group">
-                                                <a id="r-help-support" class="btn btn-vertical-normal"
-                                                    href="//www.smartdraw.com/support/" target="_blank"><i
-                                                        class="icon-support"></i> Contact Support</a>
-                                                <a id="r-help-openHelp" class="btn btn-vertical-normal"
-                                                    href="https://smartdraw.zendesk.com/hc/en-us/articles/360044531292-Navigating-the-Template-Browser"
-                                                    target="_blank"><i class="icon-question-sign"></i> Help</a>
-                                                <a id="r-help-about" class="btn btn-vertical-normal"
-                                                    onclick="SD_Click(event, 'SD_ShowModal')" modalid="m-about"
-                                                    role="btn" data-toggle="modal"><i class="icon-check"></i> About</a>
-                                                <a id="r-help-devTools"
-                                                    class="btn btn-vertical-normal hideIfNoEdit hideIfNoCreate"
-                                                    onclick="SD_Click(event, 'SD_DropDropdown')"
-                                                    dropdownid="dd-devTools" role="btn"><i class="icon-code"></i> Dev
-                                                    Tools</a>
-                                                <a id="r-help-logout" onclick="SD_Click(event, 'SD_ShowLogoutPage')"
-                                                    class="btn btn-vertical-normal hideIfNoEdit hideIfNoCreate"
-                                                    role="btn"><i class="icon-signout"></i> Logout</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                             <div contenturl="views/Ribbons/Design.html" contentloadstate="true">
                                 <div id="r-design" class="frame btn-toolbar tab-pane sdRibbon">
                                     <div class="slidee">
@@ -4329,24 +4301,6 @@
                                             style="fill:#999;fill-rule:nonzero;"></path>
                                     </svg>
                                 </a>
-                                <div id="google_translate_element">
-                                    <div class="skiptranslate goog-te-gadget" dir="ltr">
-                                        <div id=":0.targetLanguage" class="goog-te-gadget-simple"
-                                            style="white-space: nowrap;"><img
-                                                src="https://www.google.com/images/cleardot.gif"
-                                                class="goog-te-gadget-icon" alt=""
-                                                style="background-image: url(&quot;https://translate.googleapis.com/translate_static/img/te_ctrl3.gif&quot;); background-position: -65px 0px;"><span
-                                                style="vertical-align: middle;"><a aria-haspopup="true"
-                                                    class="goog-te-menu-value" href="javascript:void(0)"><span>Select
-                                                        Language</span><img
-                                                        src="https://www.google.com/images/cleardot.gif" alt=""
-                                                        width="1" height="1"><span
-                                                        style="border-left: 1px solid rgb(187, 187, 187);">&ZeroWidthSpace;</span><img
-                                                        src="https://www.google.com/images/cleardot.gif" alt=""
-                                                        width="1" height="1"><span aria-hidden="true"
-                                                        style="color: rgb(118, 118, 118);">▼</span></a></span></div>
-                                    </div>
-                                </div>
                             </div>
                             <!-- Load Alerts -->
                             <div contenturl="views/Alerts/TrialAlerts.html" contentloadstate="true">
@@ -9864,10 +9818,7 @@
                             <div id="wa-docToolbar" class="document-toolbar bottom">
                                 <div id="wa-docToolbar-layerTabs" class="layer">
                                     <ul id="wa-docToolbar-layerList">
-                                        <li class="active enabled" id="wa-docToolbar-layerTabs-1"><a
-                                                onclick="SD_Click(event, 'SD_LayerTabs')" layertab="1"><span
-                                                    id="wa-docToolbar-layerTabs-text-1">Electrical Appliances</span></a>
-                                        </li>
+
                                         <li class="active disabled" id="wa-docToolbar-layerTabs-2"><a
                                                 onclick="SD_Click(event, 'SD_LayerTabs')" layertab="2"><span
                                                     id="wa-docToolbar-layerTabs-text-2">Default</span></a></li>
