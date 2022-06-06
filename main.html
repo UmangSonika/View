@@ -8897,58 +8897,6 @@
             placeholderid="dd-roundedRectProportional"></div>
         <div contenturl="/views/Dropdowns/SampleTables.html" contentloadstate="onDemand"
             placeholderid="dd-sampleTables"></div>
-        <div contenturl="/views/Dropdowns/Scale.html" placeholderid="dd-setScale" contentloadstate="true">
-            <ul id="dd-setScale" class="dropdown-menu">
-                <li id="dd-printScaleOptions-architectural" class="dropdown-submenu"
-                    onclick="SD_Click(event, 'SD_DropDropdown')" dropdownid="dd-scale-docArchitectural"
-                    orientation="right">
-                    <a>Architectural
-                        <i class="icon-plus-sign-o icon-1x"></i>
-                    </a>
-                </li>
-                <li id="dd-printScaleOptions-metric" class="dropdown-submenu"
-                    onclick="SD_Click(event, 'SD_DropDropdown')" dropdownid="dd-scale-docMetric" orientation="right">
-                    <a>Metric
-                        <i class="icon-plus-sign-o icon-1x"></i>
-                    </a>
-                </li>
-                <li id="dd-printScaleOptions-mechanicalEngineering" class="dropdown-submenu"
-                    onclick="SD_Click(event, 'SD_DropDropdown')" dropdownid="dd-scale-docMechanicalEngineering"
-                    orientation="right">
-                    <a>Mechanical Engineering
-                        <i class="icon-plus-sign-o icon-1x"></i>
-                    </a>
-                </li>
-                <hr>
-                <li id="dd-setScale-custom" onclick="SD_Click(event, 'SD_ShowModal')" modalid="m-scale">
-                    <a>Custom...</a>
-                </li>
-            </ul>
-        </div>
-        <div contenturl="/views/Dropdowns/ScaleOptions.html" placeholderid="dd-ScaleOptions" contentloadstate="true">
-            <ul id="dd-ScaleOptions" class="dropdown-menu">
-                <li id="dd-printScaleOptions-architectural" class="dropdown-submenu"
-                    onclick="SD_Click(event, 'SD_DropDropdown')" dropdownid="dd-scale-docArchitectural"
-                    orientation="right">
-                    <a>Architectural
-                        <i class="icon-plus-sign-o pull-right"></i>
-                    </a>
-                </li>
-                <li id="dd-printScaleOptions-metric" class="dropdown-submenu"
-                    onclick="SD_Click(event, 'SD_DropDropdown')" dropdownid="dd-scale-docMetric" orientation="right">
-                    <a>Metric
-                        <i class="icon-plus-sign-o pull-right"></i>
-                    </a>
-                </li>
-                <li id="dd-printScaleOptions-mechanicalEngineering" class="dropdown-submenu"
-                    onclick="SD_Click(event, 'SD_DropDropdown')" dropdownid="dd-scale-docMechanicalEngineering"
-                    orientation="right">
-                    <a>Mechanical Engineering
-                        <i class="icon-plus-sign-o pull-right"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
         <div contenturl="/views/Dropdowns/Select.html" contentloadstate="onDemand" placeholderid="dd-select"></div>
         <div contenturl="/views/Dropdowns/SelectGraph.html" contentloadstate="onDemand" placeholderid="dd-selectGraph">
         </div>
@@ -9020,80 +8968,6 @@
         </div>
         <div contenturl="/views/Dropdowns/TabsMore.html" contentloadstate="onDemand" placeholderid="dd-more"></div>
         <div contenturl="/views/Dropdowns/Themes.html" contentloadstate="true" placeholderid="dd-themes">
-            <ul class="dropdown-menu theme" id="dd-themes">
-                <li>
-                    <label>Themes</label>
-                </li>
-                <li onclick="SD_Click(event, 'SD_ChangeTheme')" class="gallery-item builtInTheme" themename="Basic">
-                    <a>
-                        <span class="Basic"></span>
-                        <h6>Basic</h6>
-                    </a>
-                </li>
-                <li>
-                </li>
-                <li onclick="SD_Click(event, 'SD_ChangeTheme')" class="gallery-item builtInTheme" themename="Bedivere">
-                    <a>
-                        <span class="Bedivere"></span>
-                        <h6>Bedivere</h6>
-                    </a>
-                </li>
-                <li onclick="SD_Click(event, 'SD_ChangeTheme')" class="gallery-item builtInTheme" themename="Cador">
-                    <a>
-                        <span class="Cador"></span>
-                        <h6>Cador</h6>
-                    </a>
-                </li>
-                <li onclick="SD_Click(event, 'SD_ChangeTheme')" class="gallery-item builtInTheme" themename="Dagonet">
-                    <a>
-                        <span class="Dagonet"></span>
-                        <h6>Dagonet</h6>
-                    </a>
-                </li>
-                <li onclick="SD_Click(event, 'SD_ChangeTheme')" class="gallery-item builtInTheme" themename="Galahad">
-                    <a>
-                        <span class="Galahad"></span>
-                        <h6>Galahad</h6>
-                    </a>
-                </li>
-                <li onclick="SD_Click(event, 'SD_ChangeTheme')" class="gallery-item builtInTheme" themename="Geraint">
-                    <a>
-                        <span class="Geraint"></span>
-                        <h6>Geraint</h6>
-                    </a>
-                </li>
-                <li onclick="SD_Click(event, 'SD_ChangeTheme')" class="gallery-item builtInTheme" themename="Lancelot">
-                    <a>
-                        <span class="Lancelot"></span>
-                        <h6>Lancelot</h6>
-                    </a>
-                </li>
-                <li onclick="SD_Click(event, 'SD_ChangeTheme')" class="gallery-item builtInTheme" themename="Lanval">
-                    <a>
-                        <span class="Lanval"></span>
-                        <h6>Lanval</h6>
-                    </a>
-                </li>
-                <li onclick="SD_Click(event, 'SD_ChangeTheme')" class="gallery-item builtInTheme" themename="Steel">
-                    <a>
-                        <span class="Steel"></span>
-                        <h6>Steel</h6>
-                    </a>
-                </li>
-                <li class="divider divider-nonList"></li>
-                <li class="dropdown-submenu" id="dd-themes-sublegacy" onclick="SD_Click(event, 'SD_DropDropdown')"
-                    dropdownid="dd-themeLegacy" orientation="right">
-                    <a>
-                        More Themes<i class="icon-plus-sign-o pull-right"></i>
-                    </a>
-                </li>
-                <li id="dd-themes-customThemes" class="dropdown-submenu" onclick="SD_Click(event, 'SD_DropDropdown')"
-                    dropdownid="dd-customThemes" orientation="right">
-                    <a>
-                        Manage Custom Themes<i class="icon-plus-sign-o pull-right"></i>
-                    </a>
-                </li>
-            </ul>
         </div>
         <div contenturl="/views/Dropdowns/CustomThemes.html" contentloadstate="true" placeholderid="dd-customThemes">
             <ul class="dropdown-menu themes" id="dd-customThemes">
