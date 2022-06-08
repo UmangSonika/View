@@ -8862,20 +8862,10 @@
                 <ul>
                     <li>
                         <a id="dd-symbolLibSelect-showBrowser" onclick="SD_Click(event, 'SD_ShowModal')"
-                            modalid="m-symbolLib">More Symbols<i class="icon-external-link icon-1x"></i></a>
-                    </li>
-                    <li>
-                        <a id="dd-symbolLibSelect-importVisio" onclick="SD_Click(event, 'SD_ShowModal')"
-                            modalid="m-visioStencilImportDialog" class="triggerSignup">Import Visio Stencils</a>
-                    </li>
+                            modalid="m-symbolLib">More Symbols<i class="icon-external-link icon-1x"></i></a></li>
                     <li>
                         <a id="dd-symbolLibSelect-addCustom" onclick="SD_Click(event, 'SD_ShowNameDialog')"
-                            namelabel="makeLibrary" class="triggerSignup">Add New Custom Library</a>
-                    </li>
-                    <li>
-                        <a id="dd-symbolLibSelect-importCustom" onclick="SD_Click(event, 'SD_ShowModal')"
-                            modalid="m-importCustomContentDialog" class="triggerSignup">Import Custom Libraries</a>
-                    </li>
+                            namelabel="makeLibrary" class="triggerSignup">Add New Custom Library</a></li>
                 </ul>
             </div>
         </div>
@@ -8891,899 +8881,291 @@
                 <li id="dd-customThemes-model"
                     onclick="SD_Click(event, 'SD_SelectThemeForEdit','CustomThemesDialog');SD_Click(event, 'SD_DropDropdown')"
                     orientation="right" class="hide" dropdownid="dd-customThemesEditDelete" themename="TestTheme1">
-                    <a>
-                        TestTheme1
-                    </a>
+                    <a>TestTheme1</a>
                 </li>
                 <li class="divider divider-nonList"></li>
                 <li onclick="SD_Click(event, 'SD_ShowModal')" modalid="m-customThemeModal" contextid="TestTheme1">
-                    <a>
-                        Add Custom Theme
-                    </a>
+                    <a>Add Custom Theme</a>
                 </li>
             </ul>
-
         </div>
-        <div contenturl="/views/Dropdowns/CustomThemesSwatchOptions.html" contentloadstate="true"
-            placeholderid="dd-customThemesSwatchOptions">
-            <ul class="dropdown-menu themes" id="dd-customThemesSwatchOptions">
-                <li onclick="SD_Click(event, 'SD_ShowModalWithContext')" modalid="m-colorpicker" contextid="8">
-                    <a>
-                        Fill color<i class="icon-external-link icon-1x pull-right"></i>
-                    </a>
-                </li>
-                <li onclick="SD_Click(event, 'SD_ShowModalWithContext')" modalid="m-colorpicker" contextid="9">
-                    <a>
-                        Border line color<i class="icon-external-link icon-1x pull-right"></i>
-                    </a>
-                </li>
-                <li onclick="SD_Click(event, 'SD_DropDropdown')" dropdownid="dd-customThemeLineThickness"
-                    orientation="right">
-                    <a>
-                        Border line thickness<i class="icon-external-link icon-1x pull-right"></i>
-                    </a>
-                </li>
-                <li onclick="SD_Click(event, 'SD_DropDropdown')" dropdownid="dd-customThemeLineStyle"
-                    orientation="right">
-                    <a>
-                        Border line style<i class="icon-external-link icon-1x pull-right"></i>
-                    </a>
-                </li>
-            </ul>
-
-        </div>
-        <div contenturl="/views/Dropdowns/CustomThemesEditDelete.html" contentloadstate="true"
-            placeholderid="dd-customThemesEditDelete">
-            <ul class="dropdown-menu themes" id="dd-customThemesEditDelete">
-                <li id="dd-customThemesEditDelete-edit" onclick="SD_Click(event, 'SD_ShowModalWithContext')"
-                    modalid="m-customThemeModal" contextid="TestTheme1">
-                    <a>
-                        Edit theme
-                    </a>
-                </li>
-                <li id="dd-customThemesEditDelete-delete"
-                    onclick="SD_Click(event,'SD_DeleteCustomTheme', 'CustomThemesDialog')" themename="TestTheme1">
-                    <a>
-                        Delete theme
-                    </a>
-                </li>
-            </ul>
-
-        </div>
-        <div contenturl="views/Dropdowns/ThemesLegacy.html" contentloadstate="onDemand" placeholderid="dd-themeLegacy">
-        </div>
-        <div contenturl="views/Dropdowns/ThemesMore.html" contentloadstate="onDemand" placeholderid="dd-themeMore">
-        </div>
+        <div contenturl="views/Dropdowns/ThemesLegacy.html" contentloadstate="onDemand" placeholderid="dd-themeLegacy"></div>
+        <div contenturl="views/Dropdowns/ThemesMore.html" contentloadstate="onDemand" placeholderid="dd-themeMore"></div>
         <div contenturl="/views/Dropdowns/Text-Font.html" contentloadstate="onDemand" placeholderid="dd-fonts"></div>
-        <div contenturl="/views/Dropdowns/Text-Alignment.html" contentloadstate="onDemand" placeholderid="dd-textAlign">
-        </div>
-        <div contenturl="/views/Dropdowns/Text-Bullets.html" contentloadstate="onDemand" placeholderid="dd-bullets">
-        </div>
-        <div contenturl="/views/Dropdowns/Text-Direction.html" contentloadstate="onDemand"
-            placeholderid="dd-textDirection"></div>
-        <div contenturl="/views/Dropdowns/Text-Spacing.html" contentloadstate="onDemand" placeholderid="dd-textSpacing">
-        </div>
+        <div contenturl="/views/Dropdowns/Text-Alignment.html" contentloadstate="onDemand" placeholderid="dd-textAlign"></div>
+        <div contenturl="/views/Dropdowns/Text-Bullets.html" contentloadstate="onDemand" placeholderid="dd-bullets"></div>
+        <div contenturl="/views/Dropdowns/Text-Direction.html" contentloadstate="onDemand" placeholderid="dd-textDirection"></div>
+        <div contenturl="/views/Dropdowns/Text-Spacing.html" contentloadstate="onDemand" placeholderid="dd-textSpacing"></div>
         <div contenturl="/views/Dropdowns/Text-Size.html" contentloadstate="onDemand" placeholderid="dd-textSize"></div>
-        <div contenturl="views/Dropdowns/Timeframe-customyear.html" contentloadstate="onDemand"
-            placeholderid="dd-timeframe-customyear"></div>
-        <div contenturl="views/Dropdowns/Timeframe-days.html" contentloadstate="onDemand"
-            placeholderid="dd-timeframe-days"></div>
-        <div contenturl="views/Dropdowns/Timeframe-months.html" contentloadstate="onDemand"
-            placeholderid="dd-timeframe-months"></div>
-        <div contenturl="views/Dropdowns/Timeframe-years.html" contentloadstate="onDemand"
-            placeholderid="dd-timeframe-years"></div>
-        <div contenturl="/views/Dropdowns/TimelineConnectorStyle.html" contentloadstate="onDemand"
-            placeholderid="dd-timelineConnectorStyle"></div>
-        <div contenturl="/views/Dropdowns/TimelineFormat.html" contentloadstate="onDemand"
-            placeholderid="dd-timelineFormat"></div>
-        <div contenturl="/views/Dropdowns/Texture-Units.html" contentloadstate="onDemand"
-            placeholderid="dd-texture-units"></div>
-        <div contenturl="/views/Dropdowns/Texture-Align.html" contentloadstate="onDemand"
-            placeholderid="dd-texture-alignment"></div>
-        <div contenturl="views/Dropdowns/Trello-BoardName.html" contentloadstate="onDemand"
-            placeholderid="dd-trelloBoardName"></div>
+        <div contenturl="views/Dropdowns/Timeframe-customyear.html" contentloadstate="onDemand" placeholderid="dd-timeframe-customyear"></div>
+        <div contenturl="views/Dropdowns/Timeframe-days.html" contentloadstate="onDemand" placeholderid="dd-timeframe-days"></div>
+        <div contenturl="views/Dropdowns/Timeframe-months.html" contentloadstate="onDemand" placeholderid="dd-timeframe-months"></div>
+        <div contenturl="views/Dropdowns/Timeframe-years.html" contentloadstate="onDemand" placeholderid="dd-timeframe-years"></div>
+        <div contenturl="/views/Dropdowns/TimelineConnectorStyle.html" contentloadstate="onDemand" placeholderid="dd-timelineConnectorStyle"></div>
+        <div contenturl="/views/Dropdowns/TimelineFormat.html" contentloadstate="onDemand" placeholderid="dd-timelineFormat"></div>
+        <div contenturl="/views/Dropdowns/Texture-Units.html" contentloadstate="onDemand" placeholderid="dd-texture-units"></div>
+        <div contenturl="/views/Dropdowns/Texture-Align.html" contentloadstate="onDemand" placeholderid="dd-texture-alignment"></div>
+        <div contenturl="views/Dropdowns/Trello-BoardName.html" contentloadstate="onDemand" placeholderid="dd-trelloBoardName"></div>
         <div contenturl="views/Dropdowns/Trello-Lane.html" contentloadstate="onDemand" placeholderid="dd-trelloLane">
         </div>
-        <div contenturl="views/Dropdowns/Trello-Members.html" contentloadstate="onDemand"
-            placeholderid="dd-trelloMembers"></div>
+        <div contenturl="views/Dropdowns/Trello-Members.html" contentloadstate="onDemand" placeholderid="dd-trelloMembers"></div>
         <div contenturl="/views/Dropdowns/ZoomOptions.html" contentloadstate="onDemand" placeholderid="dd-zoomOptions">
         </div>
-        <div contenturl="/views/Dropdowns/SpellingSuggest.html" contentloadstate="onDemand"
-            placeholderid="dd-spellingSuggest"></div>
+        <div contenturl="/views/Dropdowns/SpellingSuggest.html" contentloadstate="onDemand" placeholderid="dd-spellingSuggest"></div>
         <div contenturl="views/Dropdowns/ChartsNew.html" contentloadstate="onDemand" placeholderid="dd-chartsNew"></div>
         <div contenturl="views/Dropdowns/PieData.html" contentloadstate="onDemand" placeholderid="dd-pieData"></div>
         <div contenturl="views/Dropdowns/ChartType.html" contentloadstate="onDemand" placeholderid="dd-chartType"></div>
-        <div contenturl="views/Dropdowns/ChartsQuickLayout.html" contentloadstate="onDemand"
-            placeholderid="dd-chartsQuickLayout"></div>
-        <div contenturl="views/Dropdowns/ChartRotate.html" contentloadstate="onDemand" placeholderid="dd-chartRotate">
-        </div>
+        <div contenturl="views/Dropdowns/ChartsQuickLayout.html" contentloadstate="onDemand" placeholderid="dd-chartsQuickLayout"></div>
+        <div contenturl="views/Dropdowns/ChartRotate.html" contentloadstate="onDemand" placeholderid="dd-chartRotate"></div>
         <div contenturl="views/Dropdowns/ChartAxes.html" contentloadstate="onDemand" placeholderid="dd-axes"></div>
-        <div contenturl="views/Dropdowns/ChartsGrid.html" contentloadstate="onDemand" placeholderid="dd-chartsGrid">
-        </div>
-        <div contenturl="views/Dropdowns/ChartsData.html" contentloadstate="onDemand" placeholderid="dd-chartsData">
-        </div>
-        <div contenturl="views/Dropdowns/HorizontalAxis.html" contentloadstate="onDemand" placeholderid="dd-hAxis">
-        </div>
+        <div contenturl="views/Dropdowns/ChartsGrid.html" contentloadstate="onDemand" placeholderid="dd-chartsGrid"></div>
+        <div contenturl="views/Dropdowns/ChartsData.html" contentloadstate="onDemand" placeholderid="dd-chartsData"></div>
+        <div contenturl="views/Dropdowns/HorizontalAxis.html" contentloadstate="onDemand" placeholderid="dd-hAxis"></div>
         <div contenturl="views/Dropdowns/VerticalAxis.html" contentloadstate="onDemand" placeholderid="dd-vAxis"></div>
-        <div contenturl="views/Dropdowns/GroupLabels.html" contentloadstate="onDemand" placeholderid="dd-groupLabels">
-        </div>
+        <div contenturl="views/Dropdowns/GroupLabels.html" contentloadstate="onDemand" placeholderid="dd-groupLabels"></div>
         <div contenturl="views/Dropdowns/AddPage.html" contentloadstate="onDemand" placeholderid="dd-addPage"></div>
-        <div contenturl="views/Dropdowns/SpellOptions.html" contentloadstate="onDemand" placeholderid="dd-spellOptions">
-        </div>
+        <div contenturl="views/Dropdowns/SpellOptions.html" contentloadstate="onDemand" placeholderid="dd-spellOptions"></div>
         <div contenturl="views/Dropdowns/Share.html" contentloadstate="onDemand" placeholderid="dd-share"></div>
-        <div contenturl="views/Dropdowns/Wireframe-Icons.html" contentloadstate="onDemand"
-            placeholderid="dd-wireframeIcons"></div>
-        <div contenturl="views/Dropdowns/FieldTypes.html" contentloadstate="onDemand" placeholderid="dd-datafieldtype">
-        </div>
-        <div contenturl="views/Dropdowns/TableSelect.html" contentloadstate="onDemand"
-            placeholderid="dd-datatableselect"></div>
-        <div contenturl="views/Dropdowns/TableActions.html" contentloadstate="onDemand"
-            placeholderid="dd-datatableActions"></div>
-        <div contenturl="views/Dropdowns/DataFieldSelect.html" contentloadstate="true"
-            placeholderid="dd-datafieldselect">
+        <div contenturl="views/Dropdowns/Wireframe-Icons.html" contentloadstate="onDemand" placeholderid="dd-wireframeIcons"></div>
+        <div contenturl="views/Dropdowns/FieldTypes.html" contentloadstate="onDemand" placeholderid="dd-datafieldtype"></div>
+        <div contenturl="views/Dropdowns/TableSelect.html" contentloadstate="onDemand" placeholderid="dd-datatableselect"></div>
+        <div contenturl="views/Dropdowns/TableActions.html" contentloadstate="onDemand" placeholderid="dd-datatableActions"></div>
+        <div contenturl="views/Dropdowns/DataFieldSelect.html" contentloadstate="true" placeholderid="dd-datafieldselect">
             <div id="dd-datafieldselect" class="skiptranslate dropdown-menu">
                 <ul id="dd-datafieldlist"></ul>
             </div>
         </div>
-        <div contenturl="views/Dropdowns/DataRule-Select.html" contentloadstate="onDemand"
-            placeholderid="dd-datarule-select"></div>
-        <div contenturl="views/Dropdowns/DataRule-Edit.html" contentloadstate="onDemand"
-            placeholderid="dd-datarule-edit"></div>
-        <div contenturl="views/Dropdowns/DataRulesDlg-FieldSelect.html" contentloadstate="onDemand"
-            placeholderid="dd-dataruledlg-fieldselect"></div>
-        <div contenturl="views/Dropdowns/DataRulesDlg-OpSelect.html" contentloadstate="onDemand"
-            placeholderid="dd-dataruledlg-opselect"></div>
-        <div contenturl="views/Dropdowns/DataRulesDlg-BoolOpSelect.html" contentloadstate="onDemand"
-            placeholderid="dd-dataruledlg-boolopselect"></div>
-        <div contenturl="views/Dropdowns/DataRulesDlg-BoolSelect.html" contentloadstate="onDemand"
-            placeholderid="dd-dataruledlg-boolselect"></div>
-        <div contenturl="views/Dropdowns/DataRulesDlg-ActionSelect.html" contentloadstate="onDemand"
-            placeholderid="dd-dataruledlg-actionselect"></div>
-        <div contenturl="views/Dropdowns/DataRulesDlg-ColorSelect.html" contentloadstate="onDemand"
-            placeholderid="dd-dataruledlg-colorselect"></div>
-        <div contenturl="views/Dropdowns/DataEdit-BoolSelect.html" contentloadstate="onDemand"
-            placeholderid="dd-dataedit-boolselect"></div>
-        <div contenturl="views/Dropdowns/DataEdit-Preset.html" contentloadstate="onDemand"
-            placeholderid="dd-dataedit-preset"></div>
-        <div contenturl="views/Dropdowns/D3SymbolLibSelect.html" contentloadstate="onDemand"
-            placeholderid="dd-d3symbollibselect"></div>
-        <div contenturl="views/Dropdowns/CommentPopup.html" contentloadstate="onDemand" placeholderid="dd-commentPopup">
-        </div>
-        <div contenturl="views/Dropdowns/smart-container-set-corner-radius.html" contentloadstate="onDemand"
-            placeholderid="dd-smart-container-setCornerRadius"></div>
-
-
-
+        <div contenturl="views/Dropdowns/DataRule-Select.html" contentloadstate="onDemand" placeholderid="dd-datarule-select"></div>
+        <div contenturl="views/Dropdowns/DataRule-Edit.html" contentloadstate="onDemand" placeholderid="dd-datarule-edit"></div>
+        <div contenturl="views/Dropdowns/DataRulesDlg-FieldSelect.html" contentloadstate="onDemand" placeholderid="dd-dataruledlg-fieldselect"></div>
+        <div contenturl="views/Dropdowns/DataRulesDlg-OpSelect.html" contentloadstate="onDemand" placeholderid="dd-dataruledlg-opselect"></div>
+        <div contenturl="views/Dropdowns/DataRulesDlg-BoolOpSelect.html" contentloadstate="onDemand" placeholderid="dd-dataruledlg-boolopselect"></div>
+        <div contenturl="views/Dropdowns/DataRulesDlg-BoolSelect.html" contentloadstate="onDemand" placeholderid="dd-dataruledlg-boolselect"></div>
+        <div contenturl="views/Dropdowns/DataRulesDlg-ActionSelect.html" contentloadstate="onDemand" placeholderid="dd-dataruledlg-actionselect"></div>
+        <div contenturl="views/Dropdowns/DataRulesDlg-ColorSelect.html" contentloadstate="onDemand" placeholderid="dd-dataruledlg-colorselect"></div>
+        <div contenturl="views/Dropdowns/DataEdit-BoolSelect.html" contentloadstate="onDemand" placeholderid="dd-dataedit-boolselect"></div>
+        <div contenturl="views/Dropdowns/DataEdit-Preset.html" contentloadstate="onDemand" placeholderid="dd-dataedit-preset"></div>
+        <div contenturl="views/Dropdowns/D3SymbolLibSelect.html" contentloadstate="onDemand" placeholderid="dd-d3symbollibselect"></div>
+        <div contenturl="views/Dropdowns/CommentPopup.html" contentloadstate="onDemand" placeholderid="dd-commentPopup"></div>
+        <div contenturl="views/Dropdowns/smart-container-set-corner-radius.html" contentloadstate="onDemand"placeholderid="dd-smart-container-setCornerRadius"></div>
         <div contenturl="/views/context_menu/bpmn_activity_cxt.html" placeholderid="cxt-bpmn-activity"
             contentloadstate="true">
             <ul class="dropdown-menu" id="cxt-bpmn-activity">
                 <li id="cxt-bpmnactivity-cut" onclick="SD_Click(event, 'SD_Cut')">
-                    <button><i class="icon-cut"></i> Cut</button>
-                </li>
+                    <button><i class="icon-cut"></i> Cut</button></li>
                 <li id="cxt-bpmnactivity-copy" onclick="SD_Click(event, 'SD_Copy')">
-                    <button><i class="icon-copy"></i> Copy</button>
-                </li>
+                    <button><i class="icon-copy"></i> Copy</button></li>
                 <li id="cxt-bpmnactivity-paste" onclick="SD_Click(event, 'SD_Paste')">
-                    <button><i class="icon-paste"></i> Paste</button>
-                </li>
-                <li id="cxt-bpmnactivity-delete" onclick="SD_Click(event, 'SD_Delete')">
-                    <button><i class="icon-remove"></i> Delete</button>
-                </li>
-                <li class="divider"></li>
-                <li id="cxt-bpmnactivity-activitytype" onclick="SD_Click(event, 'SD_DropDropdown')"
-                    dropdownid="dd-bpmnActivityType">
-                    <button><i class="icon-tags"></i> Activity Type</button>
-                </li>
-                <li id="cxt-bpmnactivity-tasktype" onclick="SD_Click(event, 'SD_DropDropdown')"
-                    dropdownid="dd-bpmnTaskType">
-                    <button><i class="icon-add-task"></i> Task Type</button>
-                </li>
-                <li id="cxt-bpmnactivity-activitymarker" onclick="SD_Click(event, 'SD_DropDropdown')"
-                    dropdownid="dd-bpmnMarker">
-                    <button><i class="icon-flag"></i> Marker</button>
-                </li>
-                <li class="divider"></li>
-                <li id="cxt-bpmnactivity-addHyperlink" onclick="SD_Click(event, 'SD_AddHyperlink')">
-                    <button><i class="icon-link"></i> Add Hyperlink</button>
-                </li>
-                <li id="cxt-bpmnactivity-addComment" onclick="SD_Click(event, 'SD_AddComment')">
-                    <button><i class="icon-add-note"></i> Add Comment</button>
-                </li>
-                <li id="cxt-bpmnactivity-addNote" onclick="SD_Click(event, 'SD_AddNote')">
-                    <button><i class="icon-file-alt"></i> Add Note</button>
-                </li>
-                <li id="cxt-bpmnactivity-Lock" onclick="SD_Click(event, 'SD_Lock')">
-                    <button><i class="icon-unlock-alt"></i> Lock</button>
-                </li>
+                    <button><i class="icon-paste"></i> Paste</button></li>
             </ul>
         </div>
         <div contenturl="/views/context_menu/bpmn_gateway_cxt.html" placeholderid="cxt-bpmn-gateway"
             contentloadstate="true">
             <ul class="dropdown-menu" id="cxt-bpmn-gateway">
                 <li id="cxt-bpmngateway-cut" onclick="SD_Click(event, 'SD_Cut')">
-                    <button><i class="icon-cut"></i> Cut</button>
-                </li>
+                    <button><i class="icon-cut"></i> Cut</button></li>
                 <li id="cxt-bpmngateway-copy" onclick="SD_Click(event, 'SD_Copy')">
-                    <button><i class="icon-copy"></i> Copy</button>
-                </li>
+                    <button><i class="icon-copy"></i> Copy</button></li>
                 <li id="cxt-bpmngateway-paste" onclick="SD_Click(event, 'SD_Paste')">
-                    <button><i class="icon-paste"></i> Paste</button>
-                </li>
-                <li id="cxt-bpmngateway-delete" onclick="SD_Click(event, 'SD_Delete')">
-                    <button><i class="icon-remove"></i> Delete</button>
-                </li>
-                <li class="divider"></li>
-                <li id="cxt-bpmngateway-eventtype" onclick="SD_Click(event, 'SD_DropDropdown')"
-                    dropdownid="dd-bpmnGatewayType">
-                    <button><i class="icon-square"></i> Gateway Type</button>
-                </li>
-                <li class="divider"></li>
-                <li id="cxt-bpmngateway-addHyperlink" onclick="SD_Click(event, 'SD_AddHyperlink')">
-                    <button><i class="icon-link"></i> Add Hyperlink</button>
-                </li>
-                <li id="cxt-bpmngateway-addComment" onclick="SD_Click(event, 'SD_AddComment')">
-                    <button><i class="icon-add-note"></i> Add Comment</button>
-                </li>
-                <li id="cxt-bpmngateway-addNote" onclick="SD_Click(event, 'SD_AddNote')">
-                    <button><i class="icon-file-alt"></i> Add Note</button>
-                </li>
-                <li id="cxt-bpmngateway-Lock" onclick="SD_Click(event, 'SD_Lock')">
-                    <button><i class="icon-unlock-alt"></i> Lock</button>
-                </li>
+                    <button><i class="icon-paste"></i> Paste</button></li>
             </ul>
         </div>
         <div contenturl="/views/context_menu/bpmn_event_cxt.html" placeholderid="cxt-bpmn-event"
             contentloadstate="true">
             <ul class="dropdown-menu" id="cxt-bpmn-event">
                 <li id="cxt-bpmnevent-cut" onclick="SD_Click(event, 'SD_Cut')">
-                    <button><i class="icon-cut"></i> Cut</button>
-                </li>
+                    <button><i class="icon-cut"></i> Cut</button></li>
                 <li id="cxt-bpmnevent-copy" onclick="SD_Click(event, 'SD_Copy')">
-                    <button><i class="icon-copy"></i> Copy</button>
-                </li>
+                    <button><i class="icon-copy"></i> Copy</button></li>
                 <li id="cxt-bpmnevent-paste" onclick="SD_Click(event, 'SD_Paste')">
-                    <button><i class="icon-paste"></i> Paste</button>
-                </li>
+                    <button><i class="icon-paste"></i> Paste</button></li>
                 <li id="cxt-bpmnevent-delete" onclick="SD_Click(event, 'SD_Delete')">
-                    <button><i class="icon-remove"></i> Delete</button>
-                </li>
-                <li class="divider"></li>
-                <li id="cxt-bpmnevent-eventtype" onclick="SD_Click(event, 'SD_DropDropdown')"
-                    dropdownid="dd-bpmnEventType">
-                    <button><i class="icon-tags"></i> Event Type</button>
-                </li>
-                <li id="cxt-bpmnevent-eventtrigger" onclick="SD_Click(event, 'SD_DropDropdown')"
-                    dropdownid="dd-bpmnEventTrigger">
-                    <button><i class="icon-bolt"></i> Event Trigger</button>
-                </li>
-                <li class="divider"></li>
-                <li id="cxt-bpmnevent-addHyperlink" onclick="SD_Click(event, 'SD_AddHyperlink')">
-                    <button><i class="icon-link"></i> Add Hyperlink</button>
-                </li>
-                <li id="cxt-bpmnevent-addComment" onclick="SD_Click(event, 'SD_AddComment')">
-                    <button><i class="icon-add-note"></i> Add Comment</button>
-                </li>
-                <li id="cxt-bpmnevent-addNote" onclick="SD_Click(event, 'SD_AddNote')">
-                    <button><i class="icon-file-alt"></i> Add Note</button>
-                </li>
-                <li id="cxt-bpmnevent-Lock" onclick="SD_Click(event, 'SD_Lock')">
-                    <button><i class="icon-unlock-alt"></i> Lock</button>
-                </li>
+                    <button><i class="icon-remove"></i> Delete</button></li>
             </ul>
         </div>
         <div contenturl="/views/context_menu/bpmn_data_cxt.html" placeholderid="cxt-bpmn-data" contentloadstate="true">
             <ul class="dropdown-menu" id="cxt-bpmn-data">
                 <li id="cxt-bpmndata-cut" onclick="SD_Click(event, 'SD_Cut')">
-                    <button><i class="icon-cut"></i> Cut</button>
-                </li>
+                    <button><i class="icon-cut"></i> Cut</button></li>
                 <li id="cxt-bpmndata-copy" onclick="SD_Click(event, 'SD_Copy')">
-                    <button><i class="icon-copy"></i> Copy</button>
-                </li>
+                    <button><i class="icon-copy"></i> Copy</button></li>
                 <li id="cxt-bpmndata-paste" onclick="SD_Click(event, 'SD_Paste')">
-                    <button><i class="icon-paste"></i> Paste</button>
-                </li>
+                    <button><i class="icon-paste"></i> Paste</button></li>
                 <li id="cxt-bpmndata-delete" onclick="SD_Click(event, 'SD_Delete')">
-                    <button><i class="icon-remove"></i> Delete</button>
-                </li>
-                <li class="divider"></li>
-                <li id="cxt-bpmndata-type" onclick="SD_Click(event, 'SD_DropDropdown')" dropdownid="dd-bpmnDataType">
-                    <button><i class="icon-tags"></i> Data Type</button>
-                </li>
-                <li class="divider"></li>
-                <li id="cxt-bpmndata-addHyperlink" onclick="SD_Click(event, 'SD_AddHyperlink')">
-                    <button><i class="icon-link"></i> Add Hyperlink</button>
-                </li>
-                <li id="cxt-bpmndata-addComment" onclick="SD_Click(event, 'SD_AddComment')">
-                    <button><i class="icon-add-note"></i> Add Comment</button>
-                </li>
-                <li id="cxt-bpmndata-addNote" onclick="SD_Click(event, 'SD_AddNote')">
-                    <button><i class="icon-file-alt"></i> Add Note</button>
-                </li>
-                <li id="cxt-bpmndata-Lock" onclick="SD_Click(event, 'SD_Lock')">
-                    <button><i class="icon-unlock-alt"></i> Lock</button>
-                </li>
+                    <button><i class="icon-remove"></i> Delete</button></li>
             </ul>
         </div>
         <div contenturl="/views/context_menu/bpmn_choreo_cxt.html" placeholderid="cxt-bpmn-choreo"
             contentloadstate="true">
             <ul class="dropdown-menu" id="cxt-bpmn-choreo">
                 <li id="cxt-bpmnchoreo-cut" onclick="SD_Click(event, 'SD_Cut')">
-                    <button><i class="icon-cut"></i> Cut</button>
-                </li>
+                    <button><i class="icon-cut"></i> Cut</button></li>
                 <li id="cxt-bpmnchoreo-copy" onclick="SD_Click(event, 'SD_Copy')">
-                    <button><i class="icon-copy"></i> Copy</button>
-                </li>
+                    <button><i class="icon-copy"></i> Copy</button></li>
                 <li id="cxt-bpmnchoreo-paste" onclick="SD_Click(event, 'SD_Paste')">
-                    <button><i class="icon-paste"></i> Paste</button>
-                </li>
+                    <button><i class="icon-paste"></i> Paste</button></li>
                 <li id="cxt-bpmnchoreo-delete" onclick="SD_Click(event, 'SD_Delete')">
-                    <button><i class="icon-remove"></i> Delete</button>
-                </li>
-                <li class="divider"></li>
-                <li id="cxt-bpmnchoreo-type" onclick="SD_Click(event, 'SD_DropDropdown')"
-                    dropdownid="dd-bpmnChoreoType">
-                    <button><i class="icon-tags"></i> Choreography Type</button>
-                </li>
-                <li id="cxt-bpmnchoreo-type" onclick="SD_Click(event, 'SD_DropDropdown')"
-                    dropdownid="dd-bpmnChoreoMarker">
-                    <button><i class="icon-flag"></i> Marker</button>
-                </li>
-                <li id="cxt-bpmnchoreo-addparticipant" onclick="SD_Click(event, 'SD_BPMN_AddParticipant')"
-                    objecttype="53">
-                    <button><i class="icon-add-child"></i> Add Participant</button>
-                </li>
-                <li id="cxt-bpmn-choreo-removeparticipant" onclick="SD_Click(event, 'SD_BPMN_RemoveParticipant')"
-                    objecttype="53">
-                    <button><i class="icon-delete-person"></i> Remove Participant</button>
-                </li>
-                <li class="divider"></li>
-                <li id="cxt-bpmnchoreo-addHyperlink" onclick="SD_Click(event, 'SD_AddHyperlink')">
-                    <button><i class="icon-link"></i> Add Hyperlink</button>
-                </li>
-                <li id="cxt-bpmnchoreo-addComment" onclick="SD_Click(event, 'SD_AddComment')">
-                    <button><i class="icon-add-note"></i> Add Comment</button>
-                </li>
-                <li id="cxt-bpmnchoreo-addNote" onclick="SD_Click(event, 'SD_AddNote')">
-                    <button><i class="icon-file-alt"></i> Add Note</button>
-                </li>
-                <li id="cxt-bpmnchoreo-Lock" onclick="SD_Click(event, 'SD_Lock')">
-                    <button><i class="icon-unlock-alt"></i> Lock</button>
-                </li>
+                    <button><i class="icon-remove"></i> Delete</button></li>
             </ul>
         </div>
         <div contenturl="/views/context_menu/bpmn_pool_cxt.html" placeholderid="cxt-bpmn-pool" contentloadstate="true">
             <ul class="dropdown-menu" id="cxt-bpmn-pool">
                 <li id="cxt-bpmnpool-cut" onclick="SD_Click(event, 'SD_Cut')">
-                    <button><i class="icon-cut"></i> Cut</button>
-                </li>
+                    <button><i class="icon-cut"></i> Cut</button></li>
                 <li id="cxt-bpmn-pool-copy" onclick="SD_Click(event, 'SD_Copy')">
-                    <button><i class="icon-copy"></i> Copy</button>
-                </li>
+                    <button><i class="icon-copy"></i> Copy</button></li>
                 <li id="cxt-bpmn-pool-paste" onclick="SD_Click(event, 'SD_Paste')">
-                    <button><i class="icon-paste"></i> Paste</button>
-                </li>
+                    <button><i class="icon-paste"></i> Paste</button></li>
                 <li id="cxt-bpmn-pool-delete" onclick="SD_Click(event, 'SD_Delete')">
-                    <button><i class="icon-remove"></i> Delete</button>
-                </li>
-                <li class="divider"></li>
-                <li id="cxt-bpmn-pool-addlane" onclick="SD_Click(event, 'SD_SwimlaneCommand')" tableaction="AddLane">
-                    <button><i class="icon-add-swimlane"></i> Add Lane</button>
-                </li>
-                <li id="cxt-bpmn-pool-removelane" onclick="SD_Click(event, 'SD_SwimlaneCommand')" tableaction="DelLane">
-                    <button><i class="icon-remove-lane"></i> Remove Lane</button>
-                </li>
-                <li class="divider"></li>
-                <li id="cxt-bpmn-pool-addHyperlink" onclick="SD_Click(event, 'SD_AddHyperlink')">
-                    <button><i class="icon-link"></i> Add Hyperlink</button>
-                </li>
-                <li id="cxt-bpmn-pool-addComment" onclick="SD_Click(event, 'SD_AddComment')">
-                    <button><i class="icon-add-note"></i> Add Comment</button>
-                </li>
-                <li id="cxt-bpmn-pool-addNote" onclick="SD_Click(event, 'SD_AddNote')">
-                    <button><i class="icon-file-alt"></i> Add Note</button>
-                </li>
-                <li id="cxt-bpmn-pool-Lock" onclick="SD_Click(event, 'SD_Lock')">
-                    <button><i class="icon-unlock-alt"></i> Lock</button>
-                </li>
+                    <button><i class="icon-remove"></i> Delete</button></li>
             </ul>
         </div>
         <div contenturl="/views/context_menu/Default.html" placeholderid="cxt-default" contentloadstate="true">
             <ul class="dropdown-menu" id="cxt-default">
                 <li id="cxt-default-cut" onclick="SD_Click(event, 'SD_Cut')">
-                    <button><i class="icon-cut"></i> Cut</button>
-                </li>
+                    <button><i class="icon-cut"></i> Cut</button></li>
                 <li id="cxt-default-copy" onclick="SD_Click(event, 'SD_Copy')">
-                    <button><i class="icon-copy"></i> Copy</button>
-                </li>
+                    <button><i class="icon-copy"></i> Copy</button></li>
                 <li id="cxt-default-paste" onclick="SD_Click(event, 'SD_Paste')">
-                    <button><i class="icon-paste"></i> Paste</button>
-                </li>
+                    <button><i class="icon-paste"></i> Paste</button></li>
                 <li id="cxt-default-delete" onclick="SD_Click(event, 'SD_Delete')">
-                    <button><i class="icon-remove"></i> Delete</button>
-                </li>
-                <li class="divider"></li>
-                <li id="cxt-default-addHyperlink" onclick="SD_Click(event, 'SD_AddHyperlink')">
-                    <button><i class="icon-link"></i> Add Hyperlink</button>
-                </li>
-                <li id="cxt-default-addComment" onclick="SD_Click(event, 'SD_AddComment')">
-                    <button><i class="icon-add-note"></i> Add Comment</button>
-                </li>
-                <li id="cxt-default-addNote" onclick="SD_Click(event, 'SD_AddNote')">
-                    <button><i class="icon-file-alt"></i> Add Note</button>
-                </li>
+                    <button><i class="icon-remove"></i> Delete</button></li>
                 <li id="cxt-default-clearImage" onclick="SD_Click(event, 'SD_ClearImage')">
-                    <button><i class="icon-delete"></i> Clear Image</button>
-                </li>
-                <li id="cxt-default-Lock" onclick="SD_Click(event, 'SD_Lock')">
-                    <button><i class="icon-unlock-alt"></i> Lock</button>
-                </li>
-            </ul>
-        </div>
-        <div contenturl="/views/context_menu/DefaultReadOnly.html" placeholderid="cxt-default-readonly"
-            contentloadstate="true">
-            <ul class="dropdown-menu" id="cxt-default-readonly">
-                <li id="cxt-default-readonly-addComment" onclick="SD_Click(event, 'SD_AddComment')">
-                    <button><i class="icon-add-note"></i> Add Comment</button>
-                </li>
+                    <button><i class="icon-delete"></i> Clear Image</button></li>
             </ul>
         </div>
         <div contenturl="/views/context_menu/polyline-menu.html" placeholderid="cxt-polyline" contentloadstate="true">
             <ul class="dropdown-menu" id="cxt-polyline">
                 <li id="cxt-polyline-cut" onclick="SD_Click(event, 'SD_Cut')">
-                    <button><i class="icon-cut"></i> Cut</button>
-                </li>
+                    <button><i class="icon-cut"></i> Cut</button></li>
                 <li id="cxt-polyline-copy" onclick="SD_Click(event, 'SD_Copy')">
-                    <button><i class="icon-copy"></i> Copy</button>
-                </li>
+                    <button><i class="icon-copy"></i> Copy</button></li>
                 <li id="cxt-polyline-paste" onclick="SD_Click(event, 'SD_Paste')">
-                    <button><i class="icon-paste"></i> Paste</button>
-                </li>
-                <li class="divider"></li>
-                <li id="cxt-polyline-changeSegment" onclick="SD_Click(event, 'SD_DropDropdown')"
-                    dropdownid="cxt-polyline-segment">
-                    <button><i class="icon-change-line"></i> Change Segment Shape</button>
-                </li>
-                <li id="cxt-polyline-removenodes" onclick="SD_Click(event, 'SD_PolyLine_RemoveNodes')">
-                    <button><i class="icon-remove-line-seg"></i> Remove Segment</button>
-                </li>
-                <li id="cxt-polyline-addnode" onclick="SD_Click(event, 'SD_PolyLine_AddNode')">
-                    <button><i class="icon-connection-points"></i> Add a Control Point</button>
-                </li>
-                <li id="cxt-polyline-split" onclick="SD_Click(event, 'SD_PolyLine_Split')">
-                    <button><i class="icon-split-two-lines"></i> Split Into Two Lines</button>
-                </li>
-                <li id="cxt-default-addComment" onclick="SD_Click(event, 'SD_AddComment')">
-                    <button><i class="icon-add-note"></i> Add Comment</button>
-                </li>
-                <li id="cxt-polyline-Lock" onclick="SD_Click(event, 'SD_Lock')">
-                    <button><i class="icon-unlock-alt"></i> Lock</button>
-                </li>
+                    <button><i class="icon-paste"></i> Paste</button></li>
             </ul>
         </div>
         <div contenturl="/views/context_menu/connector-menu.html" placeholderid="cxt-connector" contentloadstate="true">
             <ul class="dropdown-menu" id="cxt-connector">
                 <li id="cxt-connector-cut" onclick="SD_Click(event, 'SD_Cut')">
-                    <button><i class="icon-cut"></i> Cut</button>
-                </li>
+                    <button><i class="icon-cut"></i> Cut</button></li>
                 <li id="cxt-connector-copy" onclick="SD_Click(event, 'SD_Copy')">
-                    <button><i class="icon-copy"></i> Copy</button>
-                </li>
+                    <button><i class="icon-copy"></i> Copy</button></li>
                 <li id="cxt-connector-paste" onclick="SD_Click(event, 'SD_Paste')">
-                    <button><i class="icon-paste"></i> Paste</button>
-                </li>
-                <li class="divider"></li>
-                <li id="cxt-connector-arrowheads" class="dropdown-submenu" onclick="SD_Click(event, 'SD_DropDropdown')"
-                    dropdownid="dd-arrowheads">
-                    <button><i class="icon-arrow-right"></i> Arrowheads</button>
-                </li>
-                <li id="cxt-default-addComment" onclick="SD_Click(event, 'SD_AddComment')">
-                    <button><i class="icon-add-note"></i> Add Comment</button>
-                </li>
-                <li id="cxt-connector-Lock" onclick="SD_Click(event, 'SD_Lock')">
-                    <button><i class="icon-unlock-alt"></i> Lock</button>
-                </li>
+                    <button><i class="icon-paste"></i> Paste</button></li>
             </ul>
-
         </div>
         <div contenturl="/views/context_menu/table-menu.html" placeholderid="cxt-table" contentloadstate="true">
             <ul class="dropdown-menu" id="cxt-table">
                 <li id="cxt-table-join" onclick="SD_Click(event, 'SD_Table_Join')">
-                    <button><i class="icon-join-cells"></i> Join</button>
-                </li>
-                <li id="cxt-table-split" onclick="SD_Click(event, 'SD_Table_Split')">
-                    <button><i class="icon-split-cells"></i> Split</button>
-                </li>
+                    <button><i class="icon-join-cells"></i> Join</button></li>
                 <li id="cxt-table-insertrows-below" onclick="SD_Click(event, 'SD_Table_InsertRows')" direction="0">
-                    <button><i class="icon-add-row"></i> Insert Row Below</button>
-                </li>
+                    <button><i class="icon-add-row"></i> Insert Row Below</button></li>
                 <li id="cxt-table-insertrows-above" onclick="SD_Click(event, 'SD_Table_InsertRows')" direction="1">
-                    <button><i class="icon-add-row-above"></i> Insert Row Above</button>
-                </li>
+                    <button><i class="icon-add-row-above"></i> Insert Row Above</button></li>
                 <li id="cxt-table-deleterow" onclick="SD_Click(event, 'SD_Table_DeleteRows')">
-                    <button><i class="icon-delete-row"></i> Delete Row</button>
-                </li>
-                <li id="cxt-table-insertcols-right" onclick="SD_Click(event, 'SD_Table_InsertCols')" direction="0">
-                    <button><i class="icon-add-col"></i> Insert Column Right</button>
-                </li>
-                <li id="cxt-table-insertcols-left" onclick="SD_Click(event, 'SD_Table_InsertCols')" direction="1">
-                    <button><i class="icon-add-column-left"></i> Insert Column Left</button>
-                </li>
-                <li id="cxt-table-deletecol" onclick="SD_Click(event, 'SD_Table_DeleteColumns')">
-                    <button><i class="icon-delete-column"></i> Delete Column</button>
-                </li>
-                <li id="cxt-table-allowtextedit" onclick="SD_Click(event, 'SD_Table_TextEditing')">
-                    <button><i class="icon-unlock-alt"></i> Allow Text Editing</button>
-                </li>
-
+                    <button><i class="icon-delete-row"></i> Delete Row</button></li>
             </ul>
         </div>
         <div contenturl="/views/context_menu/FloorPlan-sub-menu-wall.html" placeholderid="cxt-floorPlan-wall"
             contentloadstate="true">
             <ul class="dropdown-menu" id="cxt-floorPlan-wall">
                 <li id="cxt-floorPlanWall-cut" onclick="SD_Click(event, 'SD_Cut')">
-                    <button><i class="icon-cut"></i> Cut</button>
-                </li>
+                    <button><i class="icon-cut"></i> Cut</button></li>
                 <li id="cxt-floorPlanWall-copy" onclick="SD_Click(event, 'SD_Copy')">
-                    <button><i class="icon-copy"></i> Copy</button>
-                </li>
+                    <button><i class="icon-copy"></i> Copy</button></li>
                 <li id="cxt-floorPlanWall-paste" onclick="SD_Click(event, 'SD_Paste')">
-                    <button><i class="icon-paste"></i> Paste</button>
-                </li>
-                <li class="divider"></li>
-                <li id="cxt-floorPlanWall-addCorner" onclick="SD_Click(event, 'SD_PolyLine_AddNode')">
-                    <button><i class="icon-check-minus"></i>Add Corner</button>
-                </li>
-                <li id="cxt-floorPlanWall-splitTwoLines" onclick="SD_Click(event, 'SD_PolyLine_Split')">
-                    <button><i class="icon-check-minus"></i>Split Into Two Lines</button>
-                </li>
-                <hr class="divider">
-                <li id="cxt-floorPlanWall-showDimensions" onclick="SD_Click(event, 'SD_ShowDimensions')">
-                    <button><i class="icon-remove"></i>&nbsp;Show Dimensions</button>
-                </li>
-                <li id="cxt-floorPlanWall-positionSize" onclick="SD_Click(event, 'SD_PositionSize')">
-                    <button><i class="icon-remove"></i>&nbsp;Position &amp; Size</button>
-                </li>
+                    <button><i class="icon-paste"></i> Paste</button></li>
             </ul>
         </div>
         <div contenturl="/views/context_menu/shape-sub-menu.html" placeholderid="dd-shapeDropdown"
             contentloadstate="true">
             <ul class="dropdown-menu" id="cxt-shapeSubMenu">
-                <li id="cxt-shapeSubMenu-cut" onclick="SD_Click(event, 'SD_Cut')">
-                    <a href="#">
-                        <i class="icon-cut"></i>&nbsp;Cut
-                    </a>
-                </li>
                 <li id="cxt-shapeSubMenu-copy" onclick="SD_Click(event, 'SD_Copy')">
                     <a href="#">
                         <i class="icon-copy"></i>&nbsp;Copy
-                    </a>
-                </li>
+                    </a></li>
                 <li id="cxt-shapeSubMenu-paste" onclick="SD_Click(event, 'SD_Paste')">
                     <a href="#">
                         <i class="icon-paste"></i>&nbsp;Paste
-                    </a>
-                </li>
+                    </a></li>
                 <li id="cxt-shapeSubMenu-delete" onclick="SD_Click(event, 'SD_Delete')">
                     <a href="#">
                         <i class="icon-remove"></i>&nbsp;Delete
-                    </a>
-                </li>
+                    </a></li>
                 <hr class="divider">
-                <li id="cxt-shapeSubMenu-addHyperlink" onclick="SD_Click(event, 'SD_AddHyperlink')">
-                    <a href="#">
-                        <i class="icon-link"></i>&nbsp;Add Hyperlink
-                    </a>
-                </li>
-                <li id="cxt-shapeSubMenu-removeHyperlink" onclick="SD_Click(event, 'SD_RemoveHyperlink')">
-                    <a href="#">
-                        <i class="icon-remove"></i>&nbsp;Remove Hyperlink
-                    </a>
-                </li>
                 <li id="cxt-shapeSubMenu-addAttachment" onclick="SD_Click(event, 'SD_AddAttachment')">
                     <a href="#">
                         <i class="icon-paperclip"></i>&nbsp;Add Attachment
-                    </a>
-                </li>
+                    </a></li>
                 <li id="cxt-shapeSubMenu-removeAttachment" onclick="SD_Click(event, 'SD_RemoveAttachment')">
                     <a href="#">
                         <i class="icon-remove"></i>&nbsp;Remove Attachment
-                    </a>
-                </li>
-                <hr class="divider">
-                <li id="cxt-shapeSubMenu-fill" class="dropdown-submenu" onclick="SD_Click(event, 'SD_DropDropdown')"
-                    dropdownid="dd-fill">
-                    <a href="#">
-                        <i class="icon-sign-blank"></i>&nbsp;Fill
-                    </a>
-                </li>
-                <li id="cxt-shapeSubMenu-borderThickness" class="dropdown-submenu"
-                    onclick="SD_Click(event, 'SD_DropDropdown')" dropdownid="dd-lineThickness">
-                    <a href="#">
-                        <i class="icon-check-minus"></i>&nbsp;Border Thickness
-                    </a>
-                </li>
-                <li id="cxt-shapeSubMenu-borderStyle" class="dropdown-submenu"
-                    onclick="SD_Click(event, 'SD_DropDropdown')" dropdownid="dd-lineStyle">
-                    <a href="#">
-                        <i class="icon-ellipsis-horizontal"></i>&nbsp;Border Style
-                    </a>
-                </li>
-                <li id="cxt-shapeSubMenu-borderColor" class="dropdown-submenu"
-                    onclick="SD_Click(event, 'SD_DropDropdown')" dropdownid="dd-fill">
-                    <a href="#">
-                        <i class="icon-check-minus"></i>&nbsp;Border Color
-                    </a>
-                </li>
-                <li id="cxt-shapeSubMenu-changeShape" class="dropdown-submenu"
-                    onclick="SD_Click(event, 'SD_DropDropdown')" dropdownid="dd-changeShape">
-                    <a href="#">
-                        <i class="icon-circle"></i>&nbsp;Change Shape
-                    </a>
-                </li>
+                    </a></li>
                 <hr class="divider">
                 <li id="cxt-shapeSubMenu-insertPicture" onclick="SD_Click(event, 'SD_AddPicture')">
                     <a href="#">
                         <i class="icon-sign-blank"></i>&nbsp;Insert Picture
-                    </a>
-                </li>
+                    </a></li>
                 <li id="cxt-shapeSubMenu-clearPicture" onclick="SD_Click(event, 'SD_RemovePicture')">
                     <a href="#">
                         <i class="icon-check-minus"></i>&nbsp;Clear Picture
-                    </a>
-                </li>
-                <li id="cxt-shapeSubMenu-addNote" onclick="SD_Click(event, 'SD_AddNote')">
-                    <a href="#">
-                        <i class="icon-ellipsis-horizontal"></i>&nbsp;Add Note
-                    </a>
-                </li>
-                <li id="cxt-shapeSubMenu-deleteNote" onclick="SD_Click(event, 'SD_DeleteNote')">
-                    <a href="#">
-                        <i class="icon-check-minus"></i>&nbsp;Delete Note
-                    </a>
-                </li>
-                <li id="cxt-shapeSubMenu-addComment" onclick="SD_Click(event, 'SD_AddComment')">
-                    <a href="#">
-                        <i class="icon-circle"></i>&nbsp;Add Markup Comment
-                    </a>
-                </li>
-                <hr class="divider">
-                <li id="cxt-shapeSubMenu-lock" onclick="SD_Click(event, 'SD_Lock')">
-                    <a href="#">
-                        &nbsp;Lock
-                    </a>
-                </li>
-                <li id="cxt-shapeSubMenu-freezeProperties" onclick="SD_Click(event, 'SD_FreezeProperties')">
-                    <a href="#">
-                        &nbsp;Freeze Properties
-                    </a>
-                </li>
-            </ul>
+                    </a></li>
 
+            </ul>
         </div>
         <div contenturl="/views/context_menu/WorkArea-sub-menu.html" placeholderid="cxt-workarea"
             contentloadstate="true">
             <ul class="dropdown-menu" id="cxt-workArea"
                 style="position: absolute; top: 409.8px; left: 500px; display: none; z-index: 1075;">
-                <li id="cxt-workArea-cut" onclick="SD_Click(event, 'SD_Cut')">
-                    <button><i class="icon-cut"></i>Cut</button>
-                </li>
                 <li id="cxt-workArea-copy" onclick="SD_Click(event, 'SD_Copy')">
-                    <button><i class="icon-copy"></i>Copy</button>
-                </li>
+                    <button><i class="icon-copy"></i>Copy</button></li>
                 <li id="cxt-workArea-paste" onclick="SD_Click(event, 'SD_PasteRightClick')">
-                    <button><i class="icon-paste"></i>Paste</button>
-                </li>
-                <li class="divider"></li>
-                <li id="cxt-workArea-background" class="dropdown-submenu" onclick="SD_Click(event, 'SD_DropDropdown') "
-                    dropdownid="dd-background">
-                    <button><i class="icon-background"></i>Background</button>
-                </li>
-                <li id="cxt-workArea-centerInWorkArea" onclick="SD_Click(event, 'SD_Document_CenterInWorkArea')">
-                    <button><i class="icon-center-workarea"></i>Center Document</button>
-                </li>
-                <li id="cxt-workArea-workArea" onclick="SD_Click(event, 'SD_ShowModal')" modalid="m-workArea">
-                    <button><i class="icon-workarea"></i> Work Area</button>
-                </li>
+                    <button><i class="icon-paste"></i>Paste</button></li>
             </ul>
         </div>
         <div contenturl="/views/context_menu/line-sub-menu.html" placeholderid="cxt-linesubmenu"
             contentloadstate="true">
             <ul class="dropdown-menu" id="cxt-lineSubMenu">
-                <li id="cxt-lineSubMenu-cut" onclick="SD_Click(event, 'SD_Cut')">
-                    <button><i class="icon-cut"></i> Cut</button>
-                </li>
                 <li id="cxt-lineSubMenu-copy" onclick="SD_Click(event, 'SD_Copy')">
-                    <button><i class="icon-copy"></i> Copy</button>
-                </li>
+                    <button><i class="icon-copy"></i> Copy</button></li>
                 <li id="cxt-lineSubMenu-paste" onclick="SD_Click(event, 'SD_Paste')">
-                    <button><i class="icon-paste"></i> Paste</button>
-                </li>
-                <li class="divider"></li>
-                <li id="cxt-lineSubMenu-arrowheads" class="dropdown-submenu"
-                    onclick="SD_Click(event, 'SD_DropDropdown')" dropdownid="dd-arrowheads">
-                    <button><i class="icon-arrow-right"></i> Arrowheads</button>
-                </li>
-                <li id="cxt-lineSubMenu-changeLine" class="dropdown-submenu"
-                    onclick="SD_Click(event, 'SD_DropDropdown')" dropdownid="dd-changeLineShape">
-                    <button><i class="icon-shape-line"></i> Change Line Shape</button>
-                </li>
-                <li id="cxt-lineSubMenu-lineHops" onclick="SD_Click(event, 'SD_ShowModal')" modalid="m-lineHops">
-                    <button><i class="icon-line-hops"></i> Show Line Hops</button>
-                </li>
-                <li id="cxt-default-addComment" onclick="SD_Click(event, 'SD_AddComment')">
-                    <button><i class="icon-add-note"></i> Add Comment</button>
-                </li>
-                <li id="cxt-lineSubMenu-Lock" onclick="SD_Click(event, 'SD_Lock')">
-                    <button><i class="icon-unlock-alt"></i> Lock</button>
-                </li>
+                    <button><i class="icon-paste"></i> Paste</button></li>
             </ul>
         </div>
         <div contenturl="/views/context_menu/line-sub-menu-umlclass.html" placeholderid="cxt-linesubmenuumlclass"
             contentloadstate="true">
             <ul class="dropdown-menu" id="cxt-linesubmenuumlclass">
-                <li id="cxt-lineSubMenuUMLClass-cut" onclick="SD_Click(event, 'SD_Cut')">
-                    <button><i class="icon-cut"></i> Cut</button>
-                </li>
                 <li id="cxt-lineSubMenuUMLClass-copy" onclick="SD_Click(event, 'SD_Copy')">
-                    <button><i class="icon-copy"></i> Copy</button>
-                </li>
+                    <button><i class="icon-copy"></i> Copy</button></li>
                 <li id="cxt-lineSubMenuUMLClass-paste" onclick="SD_Click(event, 'SD_Paste')">
-                    <button><i class="icon-paste"></i> Paste</button>
-                </li>
-                <li class="divider"></li>
-                <li id="cxt-lineSubMenuUMLClass-arrowheads" class="dropdown-submenu"
-                    onclick="SD_Click(event, 'SD_DropDropdown')" dropdownid="dd-arrowClass">
-                    <button><i class="icon-class-style"></i> Class Line Style</button>
-                </li>
-                <li id="cxt-lineSubMenuUMLClass-reverse" onclick="SD_Click(event, 'SD_Line_ReverseDirection')">
-                    <button><i class="icon-reverse-direction"></i> Reverse Direction</button>
-                </li>
-                <li id="cxt-lineSubMenuUMLClass-multe" onclick="SD_Click(event, 'SD_AddMultiplicity')">
-                    <button><i class="icon-add-multiplicity"></i> Add Multiplicity</button>
-                </li>
-                <li class="divider"></li>
-
-                <li id="cxt-lineSubMenuUMLClass-changeLine" class="dropdown-submenu"
-                    onclick="SD_Click(event, 'SD_DropDropdown')" dropdownid="dd-changeLineShape">
-                    <button><i class="icon-shape-line"></i> Change Line Shape</button>
-                </li>
-                <li id="cxt-lineSubMenuUMLClass-lineHops" onclick="SD_Click(event, 'SD_ShowModal')"
-                    modalid="m-lineHops">
-                    <button><i class="icon-line-hops"></i> Show Line Hops</button>
-                </li>
-                <li id="cxt-default-addComment" onclick="SD_Click(event, 'SD_AddComment')">
-                    <button><i class="icon-add-note"></i> Add Comment</button>
-                </li>
-                <li id="cxt-lineSubMenuUMLClass-Lock" onclick="SD_Click(event, 'SD_Lock')">
-                    <button><i class="icon-unlock-alt"></i> Lock</button>
-                </li>
+                    <button><i class="icon-paste"></i> Paste</button></li>
             </ul>
         </div>
         <div contenturl="/views/context_menu/line-sub-menu-uml.html" placeholderid="cxt-linesubmenuuml"
             contentloadstate="true">
             <ul class="dropdown-menu" id="cxt-linesubmenuuml">
-                <li id="cxt-lineSubMenuUMLClass-cut" onclick="SD_Click(event, 'SD_Cut')">
-                    <button><i class="icon-cut"></i> Cut</button>
-                </li>
                 <li id="cxt-lineSubMenuUMLClass-copy" onclick="SD_Click(event, 'SD_Copy')">
-                    <button><i class="icon-copy"></i> Copy</button>
-                </li>
+                    <button><i class="icon-copy"></i> Copy</button></li>
                 <li id="cxt-lineSubMenuUMLClass-paste" onclick="SD_Click(event, 'SD_Paste')">
-                    <button><i class="icon-paste"></i> Paste</button>
-                </li>
-                <li class="divider"></li>
-                <li id="cxt-lineSubMenuUMLClass-arrowheads" class="dropdown-submenu"
-                    onclick="SD_Click(event, 'SD_DropDropdown')" dropdownid="dd-arrowUML">
-                    <button><i class="icon-long-arrow-right"></i> Line Style</button>
-                </li>
-                <li id="cxt-lineSubMenuUMLClass-reverse" onclick="SD_Click(event, 'SD_Line_ReverseDirection')">
-                    <button><i class="icon-reverse-direction"></i> Reverse Direction</button>
-                </li>
-
-                <li class="divider"></li>
-
-                <li id="cxt-lineSubMenuUMLClass-changeLine" class="dropdown-submenu"
-                    onclick="SD_Click(event, 'SD_DropDropdown')" dropdownid="dd-changeLineShape">
-                    <button><i class="icon-shape-line"></i> Change Line Shape</button>
-                </li>
-                <li id="cxt-lineSubMenuUMLClass-lineHops" onclick="SD_Click(event, 'SD_ShowModal')"
-                    modalid="m-lineHops">
-                    <button><i class="icon-line-hops"></i> Show Line Hops</button>
-                </li>
-                <li id="cxt-default-addComment" onclick="SD_Click(event, 'SD_AddComment')">
-                    <button><i class="icon-add-note"></i> Add Comment</button>
-                </li>
-                <li id="cxt-lineSubMenuUMLClass-Lock" onclick="SD_Click(event, 'SD_Lock')">
-                    <button><i class="icon-unlock-alt"></i> Lock</button>
-                </li>
+                    <button><i class="icon-paste"></i> Paste</button></li>
             </ul>
         </div>
         <div contenturl="/views/context_menu/line-sub-menu-umlcomponent.html"
             placeholderid="cxt-linesubmenuumlcomponent" contentloadstate="true">
             <ul class="dropdown-menu" id="cxt-linesubmenuumlcomponent">
-                <li id="cxt-lineSubMenuUMLComponent-cut" onclick="SD_Click(event, 'SD_Cut')">
-                    <button><i class="icon-cut"></i> Cut</button>
-                </li>
                 <li id="cxt-lineSubMenuUMLComponent-copy" onclick="SD_Click(event, 'SD_Copy')">
-                    <button><i class="icon-copy"></i> Copy</button>
-                </li>
+                    <button><i class="icon-copy"></i> Copy</button></li>
                 <li id="cxt-lineSubMenuUMLComponent-paste" onclick="SD_Click(event, 'SD_Paste')">
-                    <button><i class="icon-paste"></i> Paste</button>
-                </li>
-                <li class="divider"></li>
-                <li id="cxt-lineSubMenuUMLComponent-arrowinterface" class="dropdown-submenu"
-                    onclick="SD_Click(event, 'SD_DropDropdown')" dropdownid="dd-arrowInterface">
-                    <button><i class="icon-interface-style"></i> Interface Line Style</button>
-                </li>
-                <li id="cxt-lineSubMenuUMLComponent-arrowheads" class="dropdown-submenu"
-                    onclick="SD_Click(event, 'SD_DropDropdown')" dropdownid="dd-arrowClass">
-                    <button><i class="icon-class-style"></i> Class Line Style</button>
-                </li>
-                <li id="cxt-lineSubMenuUMLComponent-reverse" onclick="SD_Click(event, 'SD_Line_ReverseDirection')">
-                    <button><i class="icon-reverse-direction"></i> Reverse Direction</button>
-                </li>
-                <li id="cxt-lineSubMenuUMLComponent-multe" onclick="SD_Click(event, 'SD_AddMultiplicity')">
-                    <button><i class="icon-add-multiplicity"></i> Add Multiplicities</button>
-                </li>
-                <li class="divider"></li>
-
-                <li id="cxt-lineSubMenuUMLComponent-changeLine" class="dropdown-submenu"
-                    onclick="SD_Click(event, 'SD_DropDropdown')" dropdownid="dd-changeLineShape">
-                    <button><i class="icon-shape-line"></i> Change Line Shape</button>
-                </li>
-                <li id="cxt-lineSubMenuUMLComponent-lineHops" onclick="SD_Click(event, 'SD_ShowModal')"
-                    modalid="m-lineHops">
-                    <button><i class="icon-line-hops"></i> Show Line Hops</button>
-                </li>
-                <li id="cxt-default-addComment" onclick="SD_Click(event, 'SD_AddComment')">
-                    <button><i class="icon-add-note"></i> Add Comment</button>
-                </li>
-                <li id="cxt-lineSubMenuUMLComponent-Lock" onclick="SD_Click(event, 'SD_Lock')">
-                    <button><i class="icon-unlock-alt"></i> Lock</button>
-                </li>
+                    <button><i class="icon-paste"></i> Paste</button></li>
             </ul>
         </div>
         <div contenturl="/views/context_menu/line-sub-menu-erd.html" placeholderid="cxt-linesubmenuerd"
             contentloadstate="true">
             <ul class="dropdown-menu" id="cxt-linesubmenuerd">
-                <li id="cxt-lineSubMenuERD-cut" onclick="SD_Click(event, 'SD_Cut')">
-                    <button><i class="icon-cut"></i> Cut</button>
-                </li>
                 <li id="cxt-lineSubMenuERD-copy" onclick="SD_Click(event, 'SD_Copy')">
-                    <button><i class="icon-copy"></i> Copy</button>
-                </li>
+                    <button><i class="icon-copy"></i> Copy</button></li>
                 <li id="cxt-lineSubMenuERD-paste" onclick="SD_Click(event, 'SD_Paste')">
-                    <button><i class="icon-paste"></i> Paste</button>
-                </li>
-                <li class="divider"></li>
-                <!-- <li id="cxt-lineSubMenuERD-arrowleft" class="dropdown-submenu" onclick="SD_Click(event, 'SD_DropDropdown')" dropdownId="dd-arrowERDLeft">
-		<button><i class="icon-arrow-right"></i> Left Arrowhead</button>
-	</li>
-	<li id="cxt-lineSubMenuERD-arrowright" class="dropdown-submenu" onclick="SD_Click(event, 'SD_DropDropdown')" dropdownId="dd-arrowERDRight">
-		<button><i class="icon-arrow-right"></i> Right Arrowhead</button>
-	</li> -->
-                <li id="cxt-lineSubMenuERD-addArrowheads" onclick="SD_Click(event, 'SD_ShowModal')"
-                    modalid="m-arrowheadsERDDialog">
-                    <button><i class="icon-long-arrow-right"></i> Set Arrowheads</button>
-                </li>
-                <li id="cxt-lineSubMenuERD-reverse" onclick="SD_Click(event, 'SD_AddMultiplicity')">
-                    <button><i class="icon-add-multiplicity"></i> Add Multiplicities</button>
-                </li>
-                <li class="divider"></li>
-
-                <li id="cxt-lineSubMenuERD-changeLine" class="dropdown-submenu"
-                    onclick="SD_Click(event, 'SD_DropDropdown')" dropdownid="dd-changeLineShape">
-                    <button><i class="icon-shape-line"></i> Change Line Shape</button>
-                </li>
-                <li id="cxt-lineSubMenuERD-lineHops" onclick="SD_Click(event, 'SD_ShowModal')" modalid="m-lineHops">
-                    <button><i class="icon-line-hops"></i> Show Line Hops</button>
-                </li>
-                <li id="cxt-default-addComment" onclick="SD_Click(event, 'SD_AddComment')">
-                    <button><i class="icon-add-note"></i> Add Comment</button>
-                </li>
-                <li id="cxt-lineSubMenuERD-Lock" onclick="SD_Click(event, 'SD_Lock')">
-                    <button><i class="icon-unlock-alt"></i> Lock</button>
-                </li>
+                    <button><i class="icon-paste"></i> Paste</button></li>
             </ul>
         </div>
         <div contenturl="/views/context_menu/line-sub-menu-bpmn.html" placeholderid="cxt-linesubmenubpmn"
@@ -10145,5 +9527,4 @@
     <div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all">
     </div>
 </body>
-
 </html>
